@@ -41,13 +41,13 @@ Environments
 ------------
 
 It's possibile to customize configuration for any given environment such as development, integration, 
-production (or whatever you want define).
+production (or whatever you want to define).
 
 Add the folder `src/main/resources/conf/{environment name}/`.
 
 Then set the proper environment's placeholer `config.properties` and `log4j.xml`.
 
-When you run the application from start script you have to set the system variable ex:
+In the deployment environment you have to set the 'APP_OPTS' system variable ex:
 
 `export APP_OPTS="-Denvironment=<development/integration/production>"`
 

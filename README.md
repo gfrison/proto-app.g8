@@ -1,14 +1,14 @@
 Proto App
 =========
 
-This is an archetype of any Java or Groovy standalone application.
+This is an archetype of any Java or Groovy standalone application based on Springframework and Gradle.
 
 Gradle
 ------
 
 Dependencies and build management is delegated to Gradle
 
-If you want to run it simply type: `gradle exec`
+If you want to run it simply type: `gradle run`. Other tasks:
 
 * compile java -- `gradle compileJava` 
 
@@ -20,7 +20,7 @@ If you want to run it simply type: `gradle exec`
 
 * create launch script  -- `gradle installApp`
 
-* create distribution (tar.gz)   -- `gradle distZip`
+* create distribution (zip)   -- `gradle distZip` it creates a zip file according to the build.gradle's projectName and version
 
 
 Spring
@@ -41,12 +41,18 @@ Environments
 ------------
 
 It's possibile to customize configuration for any given environment such as development, integration, 
-production -- or whatever you want define -- 
-adding the folder `src/main/resources/conf/{environment name}/`,
-then compiling the proper placeholer `config.properties` for the environment specific variables and
-`log4j.xml` for configuring logging.
+production (or whatever you want define).
 
-For selecting the environment during the execution set system property `gradle exec -Denvironment=<environment>` or update build.gradle file.
+Add the folder `src/main/resources/conf/{environment name}/`.
+
+Then set the proper environment's placeholer `config.properties` and `log4j.xml`.
+
+When you run the application from start script you have to set the system variable ex:
+
+`export APP_OPTS="-Denvironment=<development/integration/production>"`
+
+
+
 
 
 

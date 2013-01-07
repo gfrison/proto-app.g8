@@ -1,6 +1,5 @@
 package conf
 import org.springframework.beans.factory.config.MethodInvokingFactoryBean
-import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer
 
 def environment=System.getProperty("environment")?:'development'
 // http://goo.gl/jv3YP Runtime Spring with the Beans DSL

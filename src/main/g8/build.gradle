@@ -3,8 +3,8 @@ apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
-projectName = 'proto-app'
-version = '1.0'
+projectName = '$name$'
+version = '$version$'
 applicationName = "$projectName"
 mainClassName = "com.gfrison.GStarter"
 run.systemProperties = ['environment': 'development', 'app.name': "$projectName", 'app.version': "$version"]

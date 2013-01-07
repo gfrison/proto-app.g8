@@ -3,7 +3,7 @@ Proto App
 
 This is an archetype of any Java or Groovy standalone application based on Springframework and Gradle.
 
-You can generate your customized project through g8. For g8 installation run following commands:
+You can generate your customized project through g8. Install g8 running these commands:
 
     curl https://raw.github.com/n8han/conscript/master/setup.sh | sh
 

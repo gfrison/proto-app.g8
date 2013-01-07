@@ -1,4 +1,5 @@
-package com.gfrison 
+package com.gfrison
+
 import groovy.util.logging.Slf4j
 ;
 
@@ -10,14 +11,15 @@ public class Killer extends Thread {
 
 
     int status = 0;
-    
+
     public Killer() {
         setName("killer thread");
         start();
     }
-    
+
     public Killer(int status) {
-    	this.status=status;
+        this()
+        this.status = status;
     }
 
     @Override

@@ -3,10 +3,8 @@ apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
-projectName = '$name'
-version = '$version'
 applicationName = "$projectName"
-mainClassName = "$organization.GStarter"
+mainClassName = organization + '.GStarter'
 run.systemProperties = ['environment': 'development', 'app.name': "$projectName", 'app.version': "$version"]
 // since it's not yet possibile to set system properties
 // into launch script (http://issues.gradle.org/browse/GRADLE-1456)

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.gfrison;
+package $organization$;
 
 import static org.junit.Assert.*;
 

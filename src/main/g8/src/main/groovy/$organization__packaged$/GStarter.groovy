@@ -1,4 +1,4 @@
-package com.gfrison
+package $organization$
 
 import org.apache.log4j.Logger
 import org.codehaus.groovy.grails.commons.spring.GrailsApplicationContext
